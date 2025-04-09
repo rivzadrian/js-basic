@@ -13,26 +13,25 @@ console.log(person["job"])
 Object.defineProperty(person,"hobby", {value: "Reading"})
 
 // ## 4. Update Property
-Object.defineProperty(person, "age", {value: 30})
+person.age = 30;
+// can also Object.defineProperty(person, "age", {value: 30})
 
 // ## 5. Delete Property
 delete person.job;
 
 // ## 6. Object Inside Object
-
-// ## 7. Function in Object
 const student = {
     name : "Alice",
     grade: 90,
-    address : {city: "Jakarta", country:"Indonesia"},
+    address : {city: "Jakarta", country:"Indonesia"}
+}
 
-    greet: function(){
-        return 'Hi my name is John'
-    }
+// ## 7. Function in Object
+person.greet = function(){
+    return `Hi my name is ${person.name}`
 }
 
 console.log(student.address.city)
-console.log(student.greet())
-
+console.log(person.greet())
 
 
