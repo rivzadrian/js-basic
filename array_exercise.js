@@ -16,3 +16,6 @@ fruit.unshift("Grape")
 
 // ## 5. Remove Last Element
 fruit.pop()
+
+// ## 6. Remove First Element
+fruit.shift()
