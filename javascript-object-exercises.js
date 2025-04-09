@@ -4,3 +4,7 @@ const person = {
     age: 25,
     job: "Developer"
 }
+
+// ## 2. Access Object Properties
+console.log(person.name)
+console.log(person["job"])
