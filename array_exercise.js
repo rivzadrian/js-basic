@@ -25,3 +25,6 @@ console.log(fruit.length)
 
 // ## 8. Check if Value Exists
 console.log(fruit.includes("Banana"))
+
+// ## 9. Find Element Index
+console.log(fruit.indexOf("Orange"))
