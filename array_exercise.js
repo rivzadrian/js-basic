@@ -19,3 +19,6 @@ fruit.pop()
 
 // ## 6. Remove First Element
 fruit.shift()
+
+// ## 7. Check Array Length
+console.log(fruit.length)
