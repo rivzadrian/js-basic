@@ -22,3 +22,6 @@ fruit.shift()
 
 // ## 7. Check Array Length
 console.log(fruit.length)
+
+// ## 8. Check if Value Exists
+console.log(fruit.includes("Banana"))
