@@ -19,10 +19,20 @@ Object.defineProperty(person, "age", {value: 30})
 delete person.job;
 
 // ## 6. Object Inside Object
+
+// ## 7. Function in Object
 const student = {
     name : "Alice",
     grade: 90,
-    address : {city: "Jakarta", country:"Indonesia"}
+    address : {city: "Jakarta", country:"Indonesia"},
+
+    greet: function(){
+        return 'Hi my name is John'
+    }
 }
 
 console.log(student.address.city)
+console.log(student.greet())
+
+
+
