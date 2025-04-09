@@ -1,4 +1,3 @@
-
 # JavaScript Basic Object Exercises
 
 Practice working with objects in JavaScript with the following exercises.
@@ -9,14 +8,18 @@ Practice working with objects in JavaScript with the following exercises.
 
 Create an object called `person` with these properties:
 
-| Key   | Value       |
-|-------|-------------|
-| name  | "John"      |
-| age   | 25          |
-| job   | "Developer" |
+| Key  | Value       |
+| ---- | ----------- |
+| name | "John"      |
+| age  | 25          |
+| job  | "Developer" |
 
 ```javascript
-// your code here
+const person = {
+  name: "John",
+  age: 25,
+  job: "Developer",
+};
 ```
 
 ---
@@ -24,11 +27,13 @@ Create an object called `person` with these properties:
 ## 2. Access Object Properties
 
 Use `console.log` to display:
+
 - The person's name
 - The person's job
 
 ```javascript
-// your code here
+console.log(person.name);
+console.log(person.job);
 ```
 
 ---
@@ -38,7 +43,7 @@ Use `console.log` to display:
 Add a new property called `hobby` with value `"Reading"` to the `person` object.
 
 ```javascript
-// your code here
+person.hobby = "Reading";
 ```
 
 ---
@@ -48,7 +53,7 @@ Add a new property called `hobby` with value `"Reading"` to the `person` object.
 Change the `age` of `person` to `30`.
 
 ```javascript
-// your code here
+person.age = 30;
 ```
 
 ---
@@ -58,7 +63,7 @@ Change the `age` of `person` to `30`.
 Remove the `job` property from the `person` object.
 
 ```javascript
-// your code here
+delete person.job;
 ```
 
 ---
@@ -67,18 +72,27 @@ Remove the `job` property from the `person` object.
 
 Create an object `student` with:
 
-| Key     | Value              |
-|---------|-------------------|
-| name    | "Alice"           |
-| grade   | 90                |
-| address | object with:      |
-| - city  | "Jakarta"         |
-| - country | "Indonesia"     |
+| Key       | Value        |
+| --------- | ------------ |
+| name      | "Alice"      |
+| grade     | 90           |
+| address   | object with: |
+| - city    | "Jakarta"    |
+| - country | "Indonesia"  |
 
 Print `student`'s city.
 
 ```javascript
-// your code here
+const student = {
+  name: "Alice",
+  grade: 90,
+  address: {
+    city: "Jakarta",
+    country: "Indonesia",
+  },
+};
+
+console.log(student.address.city);
 ```
 
 ---
@@ -92,7 +106,14 @@ Add a method called `greet` inside `person` object that returns:
 Then call it.
 
 ```javascript
-// your code here
+const person = {
+  name: "John",
+};
+person.greet = function () {
+  return `Hi, my name is ${this.name}`;
+};
+
+console.log(person.greet());
 ```
 
 ---
