@@ -14,3 +14,5 @@ fruit.push("Mango")
 // ## 4. Add Element to Beginning
 fruit.unshift("Grape")
 
+// ## 5. Remove Last Element
+fruit.pop()
