@@ -6,3 +6,7 @@ const fruit = ["Apple", "Banana", "Orange"]
 
 console.log(fruit[0])
 console.log(fruit[fruit.length-1])
+
+
+// ## 3. Add Element to Array
+fruit.push("Mango")
