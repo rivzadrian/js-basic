@@ -28,3 +28,6 @@ console.log(fruit.includes("Banana"))
 
 // ## 9. Find Element Index
 console.log(fruit.indexOf("Orange"))
+
+// ## 10. Convert Array to String
+console.log(fruit.toString())
