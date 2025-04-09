@@ -8,3 +8,6 @@ const person = {
 // ## 2. Access Object Properties
 console.log(person.name)
 console.log(person["job"])
+
+// ## 3. Add New Property
+Object.defineProperty(person,"hobby", {value: "Reading"})
